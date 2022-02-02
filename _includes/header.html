@@ -1,0 +1,26 @@
+<div class="row navbar-fixed z-depth-4" style="background-color: #97D4E9; margin-bottom: 0px; height: 112px;">
+  <nav class="col l8 m10 s12 center-align offset-l2 offset-m1 z-depth-0" style="background-color: #97D4E9; height: 112px; padding:0px;" >
+      <div class="col l12 m12 s12 left-align z-depth-0" style="height: 65px; padding:0px;" >
+        <img src="{{ site.profile.ubc_logo | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" style="height:150%; padding-top:15px; padding-left:15px; float: left;">
+      </div>
+      <div class="nav-wrapper" style="line-height:1.2;">
+      <!--<img src="{{ site.profile.nlp_logo | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" style="height:120px; margin-top: 20px; float: center;">-->
+      <div style="padding-bottom: 0px; padding-top:20px; padding-right:10px; float:right;">
+        <span style="padding: 3px;"><a style="color: #002145; font-size:10pt" class="navbar-anchor" href="{{ site.baseurl | prepend: site.url }}/"><b>Home</b></a></span><span style="color: #002145; font-size:15pt; padding: 3px">|</span>
+        {% for page in site.pages %}
+        {% if page.title and page.url != "/" %}
+          <span style="padding: 3px;"><a style="color: #002145; font-size:10pt" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></span><span style="color: #002145; font-size:15pt; padding: 3px">|</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    </div>
+  <div class="col l12 m12 s12 left-align z-depth-0 valign-wrapper" style="background-color: #002145; height: 80px; width: 100%">
+    <img src="{{ site.profile.nlp_logo | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" style="height:60px; float: right;">
+    <p style="line-height:1.5; margin-left: 20px">
+        <span>Computer Science</span><br />
+        <span style="font-size:15pt">Natural Language Processing Group</span>
+    </p>
+    </div>
+  </nav>
+</div>
+

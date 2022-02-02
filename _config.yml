@@ -46,10 +46,9 @@ collections:
 # Build settings
 markdown: kramdown
 theme:
-plugins_dir: [jekyll-scholar]
 plugins:
   - jekyll-feed
-  - jekyll-scholar
+  - jekyll/scholar
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

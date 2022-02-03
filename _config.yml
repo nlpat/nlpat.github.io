@@ -49,7 +49,6 @@ theme:
 plugins:
   - jekyll-feed
   - jekyll-scholar
-  - jekyll-theme-cayman
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -63,4 +62,13 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: jekyll-theme-cayman
+exclude:
+  - .bundle
+  - CHANGELOG
+  - Gemfile
+  - LICENSE
+  - README
+  - assets/js/*
+  - config
+  - bin
+  - Gemfile.lock

@@ -49,7 +49,6 @@ theme:
 plugins:
   - jekyll-feed
   - jekyll-scholar
-  - jekyll-theme-minimal
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -73,5 +72,3 @@ exclude:
   - config
   - bin
   - Gemfile.lock
-
-theme: jekyll-theme-minimal

@@ -63,4 +63,15 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+exclude:
+  - .bundle
+  - CHANGELOG
+  - Gemfile
+  - LICENSE
+  - README
+  - assets/js/*
+  - config
+  - bin
+  - Gemfile.lock
+
 theme: jekyll-theme-minimal

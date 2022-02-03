@@ -48,7 +48,8 @@ markdown: kramdown
 theme:
 plugins:
   - jekyll-feed
-  - jekyll/scholar
+  - jekyll-scholar
+  - jekyll-theme-cayman
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

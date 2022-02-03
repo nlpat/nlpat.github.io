@@ -16,11 +16,6 @@ source "https://rubygems.org"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-scholar'
-<<<<<<< HEAD
-  gem 'jekyll-theme-slate'
-=======
->>>>>>> 6bfb8b606ea20ae15c4b835662772303dd4bfe92
-end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

@@ -2,9 +2,7 @@
 layout: page
 ---
 <div class="row" style="margin: 0px">
-	<div class="col l12 m12 s12">
-    	<p style="font-size:35pt; padding: 0px; float:left; margin-top: 10px; margin-bottom: 10px">Project Showcase</p>
-    </div>
+	<div class="col l12 m12 s12">{{ content }}</div>
 	{% assign sorted = (site.showcase | sort: 'date') | reverse %}
     {% for item in sorted %}
     <div class="col l12 m12 s12 ">

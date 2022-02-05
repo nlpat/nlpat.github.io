@@ -11,7 +11,8 @@ profile:
   description:
             <h6 style='font-weight:600; font-family:"Spartan";'>Welcome to the UBC NLP Website!</h6>
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://www.cs.ubc.ca/cs-research/lci/research-groups/natural-language-processing/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nlpat.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "http://www.cs.ubc.ca/cs-research/lci/research-groups/natural-language-processing/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: huberpa
 # github_username:  huberpa
 include: ['_pages']
@@ -61,14 +62,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-exclude:
-  - .bundle
-  - CHANGELOG
-  - Gemfile
-  - LICENSE
-  - README
-  - assets/js/*
-  - config
-  - bin
-  - Gemfile.lock

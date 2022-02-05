@@ -6,10 +6,12 @@
       <div class="nav-wrapper" style="line-height:1.2;">
       <!--<img src="{{ site.profile.nlp_logo | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" style="height:120px; margin-top: 20px; float: center;">-->
       <div style="padding-bottom: 0px; padding-top:20px; padding-right:10px; float:right;">
-        <span style="padding: 3px;"><a style="color: #002145; font-size:10pt" class="navbar-anchor" href="{{ site.baseurl | prepend: site.url }}/"><b>Home</b></a></span><span style="color: #002145; font-size:15pt; padding: 3px">|</span>
+        <span style="color: #002145; font-size:15pt; padding: 3px; font-weight:300">|</span><span style="padding: 4px;"><a style="color: #002145; font-size:12pt; font-weight:300" class="navbar-anchor" href="{{ site.baseurl | prepend: site.url }}/"><b>Home</b></a></span><span style="color: #002145; font-size:15pt; padding: 3px; font-weight:300">|</span>
         {% for page in site.pages %}
         {% if page.title and page.url != "/" %}
-          <span style="padding: 3px;"><a style="color: #002145; font-size:10pt" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></span><span style="color: #002145; font-size:15pt; padding: 3px">|</span>
+        {% if page.in_navbar  == true %}
+          <span style="padding: 4px;"><a style="color: #002145; font-size:12pt; font-weight:300" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></span><span style="color: #002145; font-size:15pt; padding: 3px; font-weight:300">|</span>
+        {% endif %}
         {% endif %}
       {% endfor %}
     </div>

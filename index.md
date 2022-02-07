@@ -9,6 +9,7 @@ permalink: /
 ---
 
 ![Group Photo](/assets/img/group.jpg){: .group .z-depth-2}
+Most group members (December 2021){: .group}
 
 ##### Our Group
 The UBC Natural Langauge Processing Group currently consists of 3 Professors, 2 Research Associates, 1 post-Doc, 8 PhD students and 2 Master students. Learn more about what we're doing <a href='{{ '/people/' | prepend: site.baseurl | prepend: site.url }}'>here</a>. 

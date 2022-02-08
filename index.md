@@ -10,7 +10,11 @@ permalink: /
 
 |![Group Photo](/assets/img/group.jpg){: .group_image .z-depth-2}|
 |*Most group members (December 2021)*|
-{: .group}
+{: .group .hide-on-med-and-down}
+
+|![Group Photo](/assets/img/group.jpg){: .group_image .z-depth-2}|
+|*Most group members (December 2021)*|
+{: .group_fullsize .hide-on-large-only}
 
 
 ##### Our Group

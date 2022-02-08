@@ -26,6 +26,13 @@ blockquote{
   min-width:300px;
 }
 
+.group_fullsize{
+  float:center;
+  width: 96%;
+  margin: 2%;
+  min-width:300px;
+}
+
 .group_image{
   float:center;
   width: 100%;

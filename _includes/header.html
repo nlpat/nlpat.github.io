@@ -9,12 +9,12 @@
       <div style="padding-top:15px; float:right;">
         <a href="#" data-target="mobile" class="sidenav-trigger"><i class="large material-icons" style="color: #002145; font-size: 30px">menu</i></a>
       </div>
-      <div class="right hide-on-med-and-down" style="padding-bottom: 0px; padding-top:40px; padding-right:0px; float:right;">
-        <span style="padding: 4px;"><a style="color: #002145; font-size:11pt; font-weight:300" class="navbar-anchor" href="{{ site.baseurl | prepend: site.url }}/"><b>Home</b></a></span>
+      <div class="right hide-on-med-and-down" style="padding-bottom: 0px; padding-top:30px; padding-right:10px; float:right;">
+        <span class="z-depth-1 waves-effect waves" style="padding: 6px;"><a style="color: #002145; font-size:11pt; font-weight:300" class="navbar-anchor" href="{{ site.baseurl | prepend: site.url }}/"><b>Home</b></a></span>
         {% for page in site.pages %}
         {% if page.title and page.url != "/" %}
         {% if page.in_navbar  == true %}
-          <span style="padding: 4px;"><a style="color: #002145; font-size:11pt; font-weight:300" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></span>
+          <span class="z-depth-1 waves-effect waves" style="padding: 6px;"><a style="color: #002145; font-size:11pt; font-weight:300" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></span>
         {% endif %}
         {% endif %}
       {% endfor %}
@@ -35,7 +35,7 @@
     {% for page in site.pages %}
     {% if page.title and page.url != "/" %}
     {% if page.in_navbar  == true %}
-      <div style="padding: 10px;"><a style="color: #002145; font-size:12pt; font-weight:300" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></div>
+      <div style="padding: 10px; margin-top: 4px"><a style="color: #002145; font-size:12pt; font-weight:300" class="navbar-anchor" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><b>{{ page.title }}</b></a></div>
     {% endif %}
     {% endif %}
   {% endfor %}

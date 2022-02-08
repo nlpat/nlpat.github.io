@@ -8,6 +8,12 @@ table, tr, td {
     padding: 0px
 }
 
+blockquote{
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #97D4E9;
+}
+
 #header_1{
 	font-family: 'Spartan', sans-serif;
 	color: green;

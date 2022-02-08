@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<div class="row card-container" style="margin-top:10px;">
+<div class="row card-container" style="margin:0px; margin-top:10px;">
 {% assign people = site.people | sort: 'date' %}
     {% assign select_people = people | where: "role", "faculty" | where: "status", "active"%}
     {% if select_people.size != 0 %}

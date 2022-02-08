@@ -1,4 +1,4 @@
-<div class="z-depth-0 group" style="background-color: #FFFFFF; margin-bottom: 20px; width:40%; padding: 10px; float:right;">
+<div class="z-depth-0" style="min-width: 300px; background-color: #FFFFFF; margin-bottom: 20px; margin-left:10px; width:50%; padding: 10px; float:right;">
 	<h5>News and Events</h5>
 		{% assign sorted = (site.news | sort: 'date') | reverse %}
 	    {% for item in sorted limit:3 %}
@@ -7,8 +7,8 @@
             <hr style="width: 60%">
             <div class="row" style="margin: 0px">
             {% if item.img and item.img != "" and item.img != nil %}
-                <div class="col s12 m6 l5 xl4 align-center" style="padding: 10px"><img class="z-depth-2" src="{{ item.img | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" style="width:100%; object-fit: cover; float:center"></div>
-                <div class="col s12 m6 l7 xl8" style='font-weight:300'>{{ item.content }}</div>
+                <div class="col s12 m12 l4 xl4 align-center" style="padding: 10px"><img class="z-depth-2" src="{{ item.img | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" style="width:100%; object-fit: cover; float:center"></div>
+                <div class="col s12 m12 l8 xl8" style='font-weight:300'>{{ item.content }}</div>
             {% else %}
                 <div class="col s12 m12 l12 xl12" style='font-weight:300'>{{ item.content }}</div>
             {% endif %}

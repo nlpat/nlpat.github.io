@@ -8,8 +8,10 @@ permalink: /
 ### NLP research at UBC
 ---
 
-![Group Photo](/assets/img/group.jpg){: .group .z-depth-2}
-Most group members (December 2021){: .group}
+|![Group Photo](/assets/img/group.jpg){: .group_image .z-depth-2}|
+|*Most group members (December 2021)*|
+{: .group}
+
 
 ##### Our Group
 The UBC Natural Langauge Processing Group currently consists of 3 Professors, 2 Research Associates, 1 post-Doc, 8 PhD students and 2 Master students. Learn more about what we're doing <a href='{{ '/people/' | prepend: site.baseurl | prepend: site.url }}'>here</a>. 
@@ -31,7 +33,7 @@ The Natural Language Processing (NLP) group at University of British Columbia co
 ##### Our Interests
 The Natural Language Processing (NLP) group at University of British Columbia conducts research in Computational Linguistics, Text Mining, Machine Learning, and Visual Text Analytics. The NLP@UBC group comprises of three senior faculty members, post-doctoral researchers, graduate students, and undergraduate research assistants. We focus on the following research areas in particular (but not limited to):
 
-{% include news_ticker.html %}{: .group}
+{% include news_ticker.html %}
 
 * __Neural Topic Segmentation__\
 Topic segmentation is a fundamental NLP task which is able to reveal the important aspects of a document semantic structure by splitting the document into topical-coherent textual units automatically. However, conventional neural topic segmenters are week at modeling context information. We have explored effective strategies to enhance neural model's capability of context modeling and further improve model's performance.

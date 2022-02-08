@@ -4,17 +4,26 @@ body {
 
 table, tr, td {
     border: none;
+    margin: 0px;
+    padding: 0px
 }
 
 #header_1{
 	font-family: 'Spartan', sans-serif;
 	color: green;
 }
+
 .group{
   float:right;
   width: 50%;
   margin: 20px;
-  min-width:250px;
+  min-width:300px;
+}
+
+.group_image{
+  float:center;
+  width: 100%;
+  min-width:200px;
 }
 
 .citation_badge_paper {

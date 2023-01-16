@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<div class="row">
+		{% assign sorted = (site.reviews | sort: 'date') | reverse %}
+	    {% for item in sorted %}
+        <table>
+	        <td class="col s4 m4 l3" style='margin-top:15px; margin-bottom:15px; font-family: "Spartan"; font-weight:300'>{{ item.date | date: "%b %-d, %Y" }}</td>
+	        <td class="col s8 m8 l9" style='margin-top:15px; margin-bottom:15px'>
+	          	<div style='font-weight:500; font-family: "Spartan";'><a href='{{ item.link }}' target="_blank">{{ item.title }}</a>
+	          	<div style='font-weight:100;'>{{item.type}}</div></div>
+			  	<div style='font-weight:300'>{{ item.content }}</div>
+			</td>
+        </table>
+        {% endfor %}
+</div>
